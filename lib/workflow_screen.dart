@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'dart:async';
 import 'dart:convert';
 // ignore: import_of_legacy_library_into_null_safe
-import 'workflow_entry_dialog.dart';
+import 'screens/workflow_entry_dialog.dart';
 import 'package:mittalfoods_app/model/workflow_entry.dart';
 import 'package:http/http.dart' as http;
 
@@ -16,16 +16,6 @@ class WorkflowView extends StatefulWidget {
 class HomeViewWidgetState extends State<WorkflowView> {
   //const HomeViewWidgetState({Key? key}) : super(key: key);
   late Future<List<WorkflowEntry>> workflowList2;
-  /*List<WorkflowEntry> workflowList = [
-    WorkflowEntry(1, DateTime.now(), DateTime.now(), DateTime.now(), 1, "Raj",
-        "COMPLETED", 1, 8, 120, 400, 380),
-    WorkflowEntry(2, DateTime.now(), DateTime.now(), DateTime.now(), 2, "Raj",
-        "COMPLETED", 2, 8, 120, 410, 390),
-    WorkflowEntry(3, DateTime.now(), DateTime.now(), DateTime.now(), 2,
-        "Suresh", "IN PROGRESS", 3, 7, 120, 430, 410),
-    WorkflowEntry(4, DateTime.now(), DateTime.now(), DateTime.now(), 3, "Raj",
-        "OPEN", 1, 6, 130, 440, 420),
-  ];*/
 
   @override
   void initState() {
@@ -204,7 +194,7 @@ class HomeViewWidgetState extends State<WorkflowView> {
               child: Row(
                 children: <Widget>[
                   const Spacer(),
-                  const Text("Entry: ", style: TextStyle(fontSize: 15.0)),
+                  const Text("Exit: ", style: TextStyle(fontSize: 15.0)),
                   Text(
                     workflow.entryTime.hour.toString() +
                         ":" +

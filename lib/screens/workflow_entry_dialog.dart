@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'model/workflow_entry.dart';
+import '../model/workflow_entry.dart';
 
 class AddEntryDialog extends StatefulWidget {
   const AddEntryDialog({Key? key}) : super(key: key);

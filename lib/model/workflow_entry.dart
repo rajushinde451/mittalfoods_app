@@ -1,4 +1,3 @@
-import 'package:intl/date_symbol_data_local.dart';
 import 'package:intl/intl.dart';
 
 class WorkflowEntry {
@@ -30,7 +29,7 @@ class WorkflowEntry {
       this.outWeight);
 
     factory WorkflowEntry.fromJson(Map<String, dynamic> json) {
-      DateTime x= DateFormat("dd MMM yyyy hh:mm", "en_US").parse(json['start_time'].substring(5,22));
+      DateTime x= DateFormat("dd MMM yyyy hh:mm", "en_US").parse(json['create_time'].substring(5,22));
       return WorkflowEntry(
               json['id'],
               x,

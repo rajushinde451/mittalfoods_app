@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'workflow_screen.dart';
+import 'master_entry_screen.dart';
 
 void main() {
   runApp(
@@ -44,7 +45,7 @@ class HomePage extends StatelessWidget {
           body: const TabBarView(
             children: [
               WorkflowView(),
-              WorkflowView(),
+              MasterEntryScreen(),
               WorkflowView(),
               WorkflowView(),
             ],
